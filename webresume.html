@@ -1,0 +1,240 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sandeep Kumar – Python Developer Resume</title>
+    <style>
+        :root {
+            --bg-color: #f4f6f8;
+            --text-color: #333;
+            --card-bg: #fff;
+            --accent: #004d66;
+            --tag-bg: #e0f7fa;
+            --tag-color: #00796b;
+        }
+
+        body.dark {
+            --bg-color: #1e1e1e;
+            --text-color: #ddd;
+            --card-bg: #2c2c2c;
+            --accent: #00bcd4;
+            --tag-bg: #37474f;
+            --tag-color: #80deea;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+
+        .resume-container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: var(--card-bg);
+            padding: 40px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin: 0;
+        }
+        .myimage{
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            float: right;
+        }
+
+        .subtitle {
+            color: var(--text-color);
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            font-size: 0.95rem;
+            color: var(--text-color);
+            margin-bottom: 30px;
+        }
+
+        .contact span {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            color: var(--accent);
+            border-bottom: 2px solid #ccc;
+            margin-top: 40px;
+            padding-bottom: 5px;
+        }
+
+        .tech-stack span {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--tag-color);
+            font-size: 0.9rem;
+            padding: 5px 10px;
+            margin: 5px 5px 0 0;
+            border-radius: 5px;
+        }
+
+        .job {
+            margin-bottom: 25px;
+        }
+
+        .job-title {
+            font-weight: bold;
+            font-size: 1.05rem;
+        }
+
+        .company {
+            font-style: italic;
+            color: #777;
+        }
+
+        .date {
+            float: right;
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+        .education li,
+        .projects li {
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .controls {
+            text-align: right;
+            margin: 10px auto -30px;
+            max-width: 850px;
+        }
+
+        .controls button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 5px;
+            margin-left: 10px;
+            cursor: pointer;
+            background: var(--accent);
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            .date {
+                float: none;
+                display: block;
+                margin-top: 5px;
+            }
+
+            .controls {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="controls">
+        <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        <button onclick="window.print()">Download PDF</button>
+    </div>
+
+    <div class="resume-container">
+        <h1>Sandeep Kumar</h1>
+        <div class="subtitle">Python Developer | Backend Engineer</div>
+        <div class="contact">
+            <img src="myimage.png" class="myimage">
+            <span>Email: sandeepkd1824@gmail.com</span>
+            <span>Phone: +91 9464228509</span><br>
+            <span>LinkedIn: linkedin.com/in/manwal-sandeep-09427918b/</span>
+        </div>
+
+        <h2>Professional Summary</h2>
+        <p>
+            Experienced Python Developer with 6+ years of experience in building scalable APIs, backend automation, and
+            data-driven applications using Django, FastAPI, PostgreSQL, and cloud integrations. Proven track record in
+            delivering efficient, reliable systems for enterprise clients like Volvo. Passionate about clean
+            architecture, performance, and DevOps tooling.
+        </p>
+
+        <h2>Skills & Technologies</h2>
+        <div class="tech-stack">
+            <span>Python</span>
+            <span>Django</span>
+            <span>FastAPI</span>
+            <span>REST APIs</span>
+            <span>Micro-Services</span>
+            <span>PostgreSQL</span>
+            <span>SQL</span>
+            <span>BigQuery</span>
+            <span>Git</span>
+            <span>Linux</span>
+            <span>AWS S3, SNS, LAMBDA</span>
+            <span>HTML/CSS</span>
+            <span>JavaScript</span>
+            <span>Unit Testing</span>
+        </div>
+
+        <h2>Professional Experience</h2>
+        <div class="job">
+            <div class="job-title">Backend Developer <span class="date">Jun 2019 – Present</span></div>
+            <div class="company">IO Datalabs, Mohali</div>
+            <ul>
+                <li>Led backend engineering for Volvo’s product platform, ensuring uptime and performance at scale.</li>
+                <li>Built secure AWS S3 upload flows using signed URLs and implemented role-based access using JWT.</li>
+                <li>Developed real-time notification systems via email, SMS, and in-app messages using event-driven
+                    design.</li>
+                <li>Wrote Python scripts to auto-update DB records and export filtered data as downloadable CSVs.</li>
+                <li>Designed BigQuery-based reporting pipelines for client dashboards and monthly KPIs.</li>
+                <li>Improved database performance by indexing and optimizing PostgreSQL queries and views.</li>
+                <li>Jinja template email and pdf generation for dynamic content rendering.</li>
+            </ul>
+        </div>
+
+        <h2>Projects</h2>
+        <ul class="projects">
+            <li><strong>Data Automation Scripts:</strong> Scheduled Python scripts to sync, update, and clean datasets
+                in production tables.</li>
+            <li><strong>AWS File Uploader:</strong> Django + FastAPI-based secure upload system using signed S3 URLs.
+            </li>
+            <li><strong>CSV Export Module:</strong> Created custom API endpoints to filter, format, and download
+                datasets as CSV.</li>
+            <li><strong>BigQuery Reporting Tool:</strong> Connected production data to BigQuery and visualized business
+                reports.</li>
+            <li><strong>Notification System:</strong> Built async notification module for alerts and user engagement.
+            </li>
+        </ul>
+
+        <h2>Education</h2>
+        <ul class="education">
+            <li><strong>B.C.A</strong> – Guru Nanak Dev University, 2018</li>
+        </ul>
+
+        <h2>Certifications</h2>
+        <ul>
+            <!-- <li>Python for Everybody – Coursera</li> -->
+            <li>Backend Development with Django – Sach-tech solutions</li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark');
+        }
+    </script>
+</body>
+
+</html>
